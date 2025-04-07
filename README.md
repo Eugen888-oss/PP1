@@ -45,7 +45,7 @@ A **commit** is a saved snapshot of your work.
 
 ---
 
-3. Use the built-in editor to make changes.
+3. Use the built-in editor to make changes.Fertig.
 4. Click `Commit changes` when done:
 
    ![Commit-Button](./assets/commit_button.png)
