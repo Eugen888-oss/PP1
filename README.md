@@ -120,13 +120,24 @@ Refer to the truth table of a 1-bit full adder:
 #### Your Task
 Create a truth table for a **2-bit adder** without carry-in. What are the possible inputs and outputs?
 
->   Your
->
->   table
->
->   goes
->
->   here!
+| B1 | B0 | A1 | A0 | C<sub>out</sub> | Q1 | Q0 |
+|---|---|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 1 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 0 | 0 | 1 | 0 |
+| 0 | 0 | 1 | 1 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 0 | 1 | 0 | 1 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 0 | 0 | 1 | 1 |
+| 0 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 1 | 0 | 0 | 1 | 0 | 1 | 1 |
+| 1 | 0 | 1 | 0 | 1 | 0 | 0 |
+| 1 | 0 | 1 | 1 | 1 | 0 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 0 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 1 | 1 | 0 |
 
 ---
 
@@ -141,12 +152,12 @@ Use the [K-Map method](https://github.com/STEMgraph/4b957490-badf-4264-b9f2-1b5a
 <details>
 <summary>The final functions</summary>
 
-Q<sub>0</sub> = .......
+Q<sub>0</sub> = (NOT A<sub>0</sub> and B<sub>0</sub>) or (A<sub>0</sub> and NOT B<sub>0</sub>)
 
-Q<sub>1</sub> = .......
+Q<sub>1</sub> = (A<sub>1</sub> and NOT B<sub>1</sub> and NOT B<sub>0</sub>) or (A<sub>1</sub> and NOT A<sub>0</sub> and NOT B<sub>1</sub>) or (NOT A<sub>1</sub> and A<sub>0</sub> and NOT B<sub>1</sub> and  B<sub>0</sub>) or (A<sub>1</sub> and A<sub>0</sub> and B<sub>1</sub> and  B<sub>0</sub>) or (NOT A<sub>1</sub> and NOT A<sub>0</sub> and B<sub>1</sub>) or (NOT A<sub>1</sub> and B<sub>1</sub> and NOT B<sub>0</sub>)
 
-C<sub>out</sub> = .......
 
+C<sub>out</sub> = (A<sub>1</sub> and B<sub>1</sub>) or (A<sub>1</sub> and A<sub>0</sub> and B<sub>0</sub>) or (A<sub>0</sub> and B<sub>1</sub> and B<sub>0</sub>)
 </details>
 
 ---
