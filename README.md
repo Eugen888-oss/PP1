@@ -45,7 +45,7 @@ A **commit** is a saved snapshot of your work.
 
 ---
 
-3. Use the built-in editor to make changes.Fertig.
+3. Use the built-in editor to make changes.
 4. Click `Commit changes` when done:
 
    ![Commit-Button](./assets/commit_button.png)
@@ -71,15 +71,28 @@ Fill out the following table, mapping decimal numbers `0` through `15` to their 
 |---------|------------------------|
 | 0       | 0000                   |
 | 1       | 0001                   |
-| ...     | ...                    |
-| 15      | ????                   |
+| 2       | 0010                   |
+| 3       | 0011                   |
+| 4       | 0100                   |
+| 5       | 0101                   |
+| 6       | 0110                   |
+| 7       | 0111                   |
+| 8       | 1000                   |
+| 9       | 1001                   |
+| 10      | 1010                   |
+| 11      | 1011                   |
+| 12      | 1100                   |
+| 13      | 1101                   |
+| 14      | 1110                   |
+| 15      | 1111                   |
 
 **How many binary digits (bits) are needed?**
 
 Explain how to calculate the number of bits required:
 <details>
 <summary>Your Answer</summary>
-Erase this text and write your answer here!
+4 Bits are needed.  
+To do the calculation you need to calculate 2 to the power of the bit (exmaple 2^3 for the forth bit) and plus 1. If the number of the calculation is higher, your Number fil in the lengh of the bit.
 </details>
 
 ---
